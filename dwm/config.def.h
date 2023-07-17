@@ -2,21 +2,21 @@
 
 /* appearance */
 static const unsigned int borderpx  = 2;        /* border pixel of windows */
-static const unsigned int gappx     = 4;       /* gap pixel between windows */
+static const unsigned int gappx     = 5;       /* gap pixel between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
-static const int topbar             = 0;       /* 0 means bottom bar */
+static const int topbar             = 1;       /* 0 means bottom bar */
 static const int usealtbar          = 1;        /* 1 means use non-dwm status bar */
 static const char *altbarclass      = "Polybar"; /* Alternate bar class name */
 static const char *alttrayname      = "tray";    /* Polybar tray instance name */
 static const char *altbarcmd        = "$HOME/.config/polybar/launch.sh"; /* Alternate bar launch command */
-static const char *fonts[]          = { "Fira Code:size=10" };
-static const char dmenufont[]       = "Fira Code:size=10";
-static const char col_gray1[]       = "#32302f";
-static const char col_gray2[]       = "#e78a4e";
-static const char col_gray3[]       = "#d4be98";
-static const char col_gray4[]       = "#32302f";
-static const char col_cyan[]        = "#89b482";
+static const char *fonts[]          = { "Fira Code:size=14" };
+static const char dmenufont[]       = "Fira Code:size=14";
+static const char col_gray1[]       = "#020221";
+static const char col_gray2[]       = "#b4b4b9";
+static const char col_gray3[]       = "#f8f8ff";
+static const char col_gray4[]       = "#36363a";
+static const char col_cyan[]        = "#ffe8c0";
 static const unsigned int baralpha = 0xd0;
 static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]      = {
