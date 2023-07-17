@@ -1,10 +1,10 @@
 *foreground:   #c5c8c6
-*background:   #1d1f21
-*cursorColor:  #aeafad
+*background:   #020221
+*cursorColor:  #ffe8c0
 *color0:       #000000
 *color1:       #912226
 *color2:       #778900
-*color3:       #ae7b00
+*color3:       #ffc552
 *color4:       #1d2594
 *color5:       #682a9b
 *color6:       #2b6651
@@ -16,4 +16,4 @@
 *color12:      #81a2be
 *color13:      #b294bb
 *color14:      #8abeb7
-*color15:      #ecebec
+*color15:      #f8f8ff

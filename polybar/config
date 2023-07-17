@@ -57,7 +57,7 @@ monitor-strict = false
 width = 100%
 height = 36
 offset-x = 0%
-;offset-y = 1%
+;offset-y = 0%
 radius = 0
 fixed-center = true
 
@@ -65,12 +65,12 @@ enable-ipc = true
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 6
+line-size = 9
 line-color = ${colors.icon}
 
-padding-right = 1
+padding = 5
 
-font-0 = Liberation Mono:size=10;2
+font-0 = Fira Code:size=12;2
 font-1 = Font Awesome 5 Free:size=10;2
 font-2 = Font Awesome 5 Free Solid:size=10;2
 font-3 = Font Awesome 5 Brands:size=10;2
@@ -78,10 +78,10 @@ font-4 = Weather Icons:size=10;2
 font-5 = Material Icons:size=11;4
 font-6 = Material Icons:size=13;5
 
-modules-left = dwm disks
-modules-right = restart cpu memory wlan date pulseaudio
-tray-position = right
-tray-padding = 2
+modules-left = dwm
+modules-right = pulseaudio cpu memory wlan restart date
+tray-position = left 
+tray-padding = 0
 
 override-redirect = false
 
@@ -90,11 +90,10 @@ cursor-scroll = ns-resize
 
 [module/pulseaudio]
 type = internal/pulseaudio
-
 ; Sink to be used, if it exists (find using `pacmd list-sinks`, name field)
 ; If not, uses default sink
 ; sink = alsa_output.pci-0000_12_00.3.analog-stereo
-
+format-margin = 2
 ; Use PA_VOLUME_UI_MAX (~153%) if true, or PA_VOLUME_NORM (100%) if false
 ; Default: true
 use-ui-max = true
@@ -171,10 +170,10 @@ secondary-layout-symbol = [M]
 label-title = %title%
 label-title-padding = 2
 label-title-foreground = ${colors.primary}
-label-title-maxlen = 30
+label-title-maxlen = 85
 
 ; Defaults to 'Desktop'
-label-title-default = "Desktop"
+label-title-default = "NULL"
 
 ; Symbol of current layout
 ; Available tokens:
@@ -229,7 +228,7 @@ interval = 0.5
 
 label-foreground = ${colors.foreground}
 
-format-prefix = "C: "
+format-prefix = "C| "
 format-prefix-font = 2
 format-prefix-foreground = ${colors.icon}
 
@@ -248,12 +247,12 @@ interval = 2
 label = %percentage_used%%
 label-foreground = ${colors.foreground}
 
-format-prefix = "M: "
+format-prefix = "M| "
 format-prefix-font = 2
 format-prefix-foreground = ${colors.icon}
 
-format-padding = 1
-format-margin = 1
+format-padding = 0
+format-margin = 0
 format-background = ${colors.background-alt}
 format-underline = ${colors.background}
 format-overline = ${colors.background}
@@ -264,7 +263,7 @@ interface = wlo1
 interval = 3.0
 ping-interval = 3.0
 
-label-connected = %essid%: %local_ip%
+label-connected = %essid%|%local_ip%
 label-connected-foreground = ${colors.foreground}
 
 label-packetloss = %essid%: %local_ip%
@@ -299,7 +298,7 @@ format-packetloss-background = ${colors.background-alt}
 
 [module/date]
 type = internal/date
-date = "%a %m-%d-%Y"
+date = "%a %B|%m %d, %Y"
 time = %I:%M %p
 interval = 5
 
@@ -308,10 +307,10 @@ label = %date%  %time%
 format-prefix = 
 format-prefix-font = 6
 format-prefix-padding-right = 1
-format-prefix-padding-left = 0
+format-prefix-padding-left = 1
 
-format-padding = 1
-format-margin = 1
+format-padding = 0
+format-margin = 0
 format-underline = ${colors.background}
 format-overline = ${colors.background}
 format-prefix-foreground = ${colors.icon}
