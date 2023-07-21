@@ -1,0 +1,7 @@
+[user]
+	email = javiergarcferrer@gmail.com
+	name = Javier
+[init]
+	defaultBranch = main
+[pull]
+	rebase = true
