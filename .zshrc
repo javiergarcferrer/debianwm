@@ -110,8 +110,22 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-export OPENAI_API_KEY=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
+# Load OpenAI key
+source ~/.OpenAI
 [ -f ~/.lazyshell.zsh ] && source ~/.lazyshell.zsh
 
 export LIBVA_DRIVER_NAME=nvidia
 export VDPAU_DRIVER=nvidia
+
+export VISUAL=vim
+export EDITOR=vim
+export PATH="$PATH:/opt/flutter/bin"
+export PATH="$PATH:/opt/android-studio/bin"
+export PATH="$PATH":"$HOME/.pub-cache/bin"
+
+# bun completions
+[ -s "/home/javier/.bun/_bun" ] && source "/home/javier/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

@@ -298,7 +298,7 @@ format-packetloss-background = ${colors.background-alt}
 
 [module/date]
 type = internal/date
-date = "%a %B|%m %d, %Y"
+date = "%a %B[%m] %d, %Y"
 time = %I:%M %p
 interval = 5
 

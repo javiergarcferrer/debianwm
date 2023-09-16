@@ -1,4 +1,4 @@
-"st -e vim"
+"st -e bash -c 'cd ~/project && exec vim'"
   Shift+Alt + e
 
 "st -e ranger"
